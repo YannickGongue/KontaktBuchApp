@@ -59,7 +59,7 @@
     ItemsSource="{Binding Addresses}" />
 
 				<DataGridComboBoxColumn Header="Contacts"
-                SelectedItemBinding="{Binding Category}"
+                SelectedItemBinding="{Binding ContactTypes}"
                 DisplayMemberPath="Name"
                 SelectedValuePath="CategoryId"
                 ItemsSource="{Binding Categories}" />

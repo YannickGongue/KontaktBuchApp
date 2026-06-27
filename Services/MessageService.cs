@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace KontaktBuchApp.Services
 {
@@ -13,6 +14,11 @@ namespace KontaktBuchApp.Services
 		{
 			MessageBox.Show(message, "Message", MessageBoxButton.OK, MessageBoxImage.Information);
 		}
-	
+
+		public void ShowUserControl(Window wdControl)
+		{
+			wdControl.Show();
+		}
+
 	}
 }

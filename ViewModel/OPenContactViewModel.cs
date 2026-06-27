@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace KontaktBuchApp.ViewModel
 {
-    class OPenContactViewModel
-    {
+    public class OPenContactViewModel : ViewModelBase
+	 {
+
     }
 }

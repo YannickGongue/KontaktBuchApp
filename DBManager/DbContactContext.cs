@@ -16,10 +16,9 @@ namespace KontaktBuchApp.DBManager
 		}
 		public DbSet<MContact> Contacts { get; set; }
 		public DbSet<MAddress> Addresses { get; set; }	
-
 		public DbSet<MContactType> ContactTypes { get; set; }
 
-		public List<MContact> ltComtact { get; set; }
+		public List<MContact> ltContact { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
