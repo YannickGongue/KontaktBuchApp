@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "KontaktListeApp/1.0.0": {
+        "runtime": {
+          "KontaktListeApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KontaktListeApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
