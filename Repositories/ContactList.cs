@@ -42,7 +42,7 @@ namespace KontaktBuchApp.Repositories
 			existing.Vorname = contact.Vorname;
 			existing.Profilbild = contact.Profilbild;
 			existing.addresses = contact.addresses;
-			existing.kontaktTypes = contact.kontaktTypes;
+			existing.kontaktMethods = contact.kontaktMethods;
 		}
 
 		public void Delete(string id)

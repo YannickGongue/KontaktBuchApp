@@ -31,7 +31,7 @@ namespace KontaktBuchApp
 			
 			services.AddSingleton<ContactListView>();
 			services.AddSingleton<ContactDetailView>();
-			services.AddSingleton<UcOpenContact>();
+			services.AddSingleton<OpenContactView>();
 
 			services.AddTransient<ContactListViewModel>();
 			services.AddTransient<OPenContactViewModel>();
@@ -39,7 +39,7 @@ namespace KontaktBuchApp
 
 
 			services.AddTransient<MContact>();
-			services.AddTransient<MContactType>();
+			services.AddTransient<MContactMethod>();
 			services.AddTransient<MAddress>();
 
 			services.AddTransient<IImagesService, ImageService>();

@@ -16,7 +16,7 @@ namespace KontaktBuchApp.Models
 		public Byte[]  Profilbild { get; set; }
       public string  Nachname { get; set; }
 		public string Vorname { get; set; }
-		public ICollection <MContactType> kontaktTypes { get; set; }
+		public ICollection <MContactMethod> kontaktMethods{ get; set; }
 		public ICollection <MAddress> addresses { get; set; }
 	}
 }

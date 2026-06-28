@@ -16,7 +16,7 @@ namespace KontaktBuchApp.DBManager
 		}
 		public DbSet<MContact> Contacts { get; set; }
 		public DbSet<MAddress> Addresses { get; set; }	
-		public DbSet<MContactType> ContactTypes { get; set; }
+		public DbSet<MContactMethod> ContactMethods { get; set; }
 
 		//public List<MContact> ltContact { get; set; }
 
@@ -62,9 +62,9 @@ namespace KontaktBuchApp.DBManager
 			//	}
 			//});
 
-			modelBuilder.Entity<MContactType>()
+			modelBuilder.Entity<MContactMethod>()
 				  .HasOne<MContact>(c => c.mContact)
-				  .WithMany(sp => sp.kontaktTypes)
+				  .WithMany(sp => sp.kontaktMethods)
 				  .HasForeignKey(s => s.ContactId);
 
 

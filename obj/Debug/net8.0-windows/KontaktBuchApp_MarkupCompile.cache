@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\App.xaml
-5-985404837
+7-2121011852
 
-25-1342175185
+28458170783
 209-629217917
-Themes\Generic.xaml;Themes\Geometry.xaml;Views\ContactDetailView.xaml;Views\ContactListView.xaml;Views\UcOpenContact.xaml;
+Themes\Generic.xaml;Themes\Geometry.xaml;Views\ContactDetailView.xaml;Views\ContactListView.xaml;Views\OpenContactView.xaml;Views\ucAdresse.xaml;Views\ucContactMethod.xaml;
 
 False
 

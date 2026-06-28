@@ -2,10 +2,16 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Views\ucAdresse.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\ContactDetailView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\UcOpenContact.xaml.cs">
+    <Compile Update="Views\OpenContactView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ucContactMethod.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

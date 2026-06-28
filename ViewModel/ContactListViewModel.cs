@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 using CommunityToolkit.Mvvm.Input;
+using KontaktBuchApp.Models;
 
 namespace KontaktBuchApp.ViewModel
 {
@@ -22,14 +23,14 @@ namespace KontaktBuchApp.ViewModel
 		private IContactList _IcontactList;
 		private ImageSource imagePath;
 		private ObservableCollection<MAddress> addresses;
-		private ObservableCollection<MContactType> contactTypes;
+		private ObservableCollection<MContactMethod> contactMethods	;
 		private IMessageService _Imessageservice;
 		private IImagesService _IimageService;
 		private IFileDialogService _fileDialogService;
 		private ContactDetailViewModel _vmContactDetail;
 		private ContactDetailView ContactDetailView;
 
-		private UcOpenContact ucOpenContact;
+		private OpenContactView openContactView;
 		private OPenContactViewModel _vmOpenContact;
 
 
@@ -90,13 +91,13 @@ namespace KontaktBuchApp.ViewModel
 			}
 		}
 
-		public ObservableCollection<MContactType> ContactTypes
+		public ObservableCollection<MContactMethod> ContactMethods
 		{
-			get { return contactTypes; }
+			get { return contactMethods	; }
 			set
 			{
-				contactTypes = value;
-				OnPropertyChanged(nameof(this.ContactTypes));
+				contactMethods	 = value;
+				OnPropertyChanged(nameof(this.ContactMethods));
 			}
 		}
 
@@ -131,17 +132,18 @@ namespace KontaktBuchApp.ViewModel
 
 		private void AddContact()
 		{
-			this.ucOpenContact = new UcOpenContact();
-			this.ucOpenContact.DataContext = this._vmOpenContact;
-			this.ucOpenContact.Show();
-		}
-
-		private void OpenContact()
-		{	
-
 			this.ContactDetailView = new ContactDetailView();
 			this.ContactDetailView.DataContext = this._vmContactDetail;
 			this.ContactDetailView.Show();
+			
+		}
+
+		private void OpenContact()
+		{
+
+			this.openContactView = new OpenContactView();
+			this.openContactView.DataContext = this._vmOpenContact;
+			this.openContactView.Show();
 		}
 	}
 }

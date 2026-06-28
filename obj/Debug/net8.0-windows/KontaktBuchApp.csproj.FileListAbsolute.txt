@@ -2,7 +2,6 @@ C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-win
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Themes\Geometry.baml
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ContactDetailView.g.cs
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ContactListView.g.cs
-C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\UcOpenContact.g.cs
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\KontaktBuchApp_MarkupCompile.cache
@@ -27,7 +26,6 @@ C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-win
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Themes\Generic.baml
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ContactDetailView.baml
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ContactListView.baml
-C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\UcOpenContact.baml
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\KontaktBuchApp.g.resources
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\KontaktBuchApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\KontaktBuchApp.AssemblyInfoInputs.cache
@@ -40,3 +38,9 @@ C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-win
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\KontaktBuchApp.pdb
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\KontaktBuchApp.genruntimeconfig.cache
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\ref\KontaktBuchApp.dll
+C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\OpenContactView.g.cs
+C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\OpenContactView.baml
+C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ucAdresse.g.cs
+C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ucContactMethod.g.cs
+C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ucAdresse.baml
+C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ucContactMethod.baml
