@@ -18,7 +18,7 @@ namespace KontaktBuchApp.Views
 	/// <summary>
 	/// Interaktionslogik für ContactDetailView.xaml
 	/// </summary>
-	public partial class ContactDetailView : UserControl
+	public partial class ContactDetailView : Window
 	{
 		public ContactDetailView()
 		{

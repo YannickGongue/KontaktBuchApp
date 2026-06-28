@@ -18,7 +18,7 @@ namespace KontaktBuchApp.Views
 	/// <summary>
 	/// Interaktionslogik für UcOpenContact.xaml
 	/// </summary>
-	public partial class UcOpenContact : UserControl
+	public partial class UcOpenContact : Window
 	{
 		public UcOpenContact()
 		{

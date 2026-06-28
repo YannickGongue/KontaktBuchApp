@@ -10,7 +10,7 @@ namespace KontaktBuchApp.Services
 {
 	public interface IContactList
 	{
-		IEnumerable<MContact> GetAll();
+		List<MContact> GetAll();
 		MContact? Get(string id);
 		void Add(MContact contact);
 		void Update(MContact contact);

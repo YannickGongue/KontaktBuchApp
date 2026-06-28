@@ -92,7 +92,7 @@
 		<Controls:IconButton 
 	x:Name="btnAdd" 
 	Content="AddContact" 
-	Command="{Binding AddCommand }"
+	Command="{Binding  AddCommand }"
       CornerRadius="8"
       Width="205"
       Height="40"

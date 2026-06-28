@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\viewmodel\\opencontactviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:viewmodel\\opencontactviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\themes\\generic.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:themes\\generic.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\viewmodel\\contactlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:viewmodel\\contactlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\repositories\\contactlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:repositories\\contactlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\dbmanager\\dbcontactcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:dbmanager\\dbcontactcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\repositories\\icontactlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:repositories\\icontactlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\models\\mcontactstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:models\\mcontactstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\models\\mcontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:models\\mcontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\views\\contactlistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:views\\contactlistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\views\\contactdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:views\\contactdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\views\\ucopencontact.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:views\\ucopencontact.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\viewmodel\\contactdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:viewmodel\\contactdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|c:\\users\\vamic\\source\\repos\\kontatbuchapp1.2\\kontaktbuchapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D96C1D51-7720-45CB-4C16-1A2E982DDAE0}|KontaktBuchApp.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OPenContactViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\ViewModel\\OPenContactViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\OPenContactViewModel.cs",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\ViewModel\\OPenContactViewModel.cs*",
+              "RelativeToolTip": "ViewModel\\OPenContactViewModel.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T10:28:51.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MContactsType.cs",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Models\\MContactsType.cs",
+              "RelativeDocumentMoniker": "Models\\MContactsType.cs",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Models\\MContactsType.cs",
+              "RelativeToolTip": "Models\\MContactsType.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T08:24:36.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DbContactContext.cs",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\DBManager\\DbContactContext.cs",
+              "RelativeDocumentMoniker": "DBManager\\DbContactContext.cs",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\DBManager\\DbContactContext.cs",
+              "RelativeToolTip": "DBManager\\DbContactContext.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAD4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T08:12:04.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MContact.cs",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Models\\MContact.cs",
+              "RelativeDocumentMoniker": "Models\\MContact.cs",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Models\\MContact.cs",
+              "RelativeToolTip": "Models\\MContact.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T08:11:32.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactList.cs",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Repositories\\ContactList.cs",
+              "RelativeDocumentMoniker": "Repositories\\ContactList.cs",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Repositories\\ContactList.cs",
+              "RelativeToolTip": "Repositories\\ContactList.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T08:10:12.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IContactList.cs",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Repositories\\IContactList.cs",
+              "RelativeDocumentMoniker": "Repositories\\IContactList.cs",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Repositories\\IContactList.cs",
+              "RelativeToolTip": "Repositories\\IContactList.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T08:09:17.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ContactDetailViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\ViewModel\\ContactDetailViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ContactDetailViewModel.cs",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\ViewModel\\ContactDetailViewModel.cs",
+              "RelativeToolTip": "ViewModel\\ContactDetailViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T07:44:05.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-28T07:06:00.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwDQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T06:48:02.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Generic.xaml",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Themes\\Generic.xaml",
+              "RelativeDocumentMoniker": "Themes\\Generic.xaml",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Themes\\Generic.xaml",
+              "RelativeToolTip": "Themes\\Generic.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-28T06:23:11.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\ViewModel\\ContactListViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ContactListViewModel.cs",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\ViewModel\\ContactListViewModel.cs",
+              "RelativeToolTip": "ViewModel\\ContactListViewModel.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAADgv2oAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T05:13:45.141Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 973,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "46505749-228a-4e0b-8c5f-5cf0d88e1095",
+        "Display": 1,
+        "X": 281,
+        "Y": 307,
+        "Width": 929,
+        "Height": 372,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UcOpenContact.xaml",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Views\\UcOpenContact.xaml",
+              "RelativeDocumentMoniker": "Views\\UcOpenContact.xaml",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Views\\UcOpenContact.xaml",
+              "RelativeToolTip": "Views\\UcOpenContact.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-28T07:10:26.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ContactListView.xaml",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Views\\ContactListView.xaml",
+              "RelativeDocumentMoniker": "Views\\ContactListView.xaml",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Views\\ContactListView.xaml",
+              "RelativeToolTip": "Views\\ContactListView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-28T06:22:32.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ContactDetailView.xaml",
+              "DocumentMoniker": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Views\\ContactDetailView.xaml",
+              "RelativeDocumentMoniker": "Views\\ContactDetailView.xaml",
+              "ToolTip": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\Views\\ContactDetailView.xaml",
+              "RelativeToolTip": "Views\\ContactDetailView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-28T07:37:35.274Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

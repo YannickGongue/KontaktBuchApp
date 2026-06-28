@@ -1,5 +1,4 @@
-﻿using CommunityToolkit.Mvvm.Input;
-using KontakBuchApp.Models;
+﻿using KontakBuchApp.Models;
 using KontaktBuchApp.Services;
 using KontaktBuchApp.Views;
 using System;
@@ -9,8 +8,8 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using System.Windows.Media;
+using CommunityToolkit.Mvvm.Input;
 
 namespace KontaktBuchApp.ViewModel
 {
@@ -20,12 +19,16 @@ namespace KontaktBuchApp.ViewModel
 		private string contactId;
 		private string vorname;
 		private string nachname;
+		private IContactList _IcontactList;
 		private ImageSource imagePath;
 		private ObservableCollection<MAddress> addresses;
 		private ObservableCollection<MContactType> contactTypes;
 		private IMessageService _Imessageservice;
 		private IImagesService _IimageService;
 		private IFileDialogService _fileDialogService;
+		private ContactDetailViewModel _vmContactDetail;
+		private ContactDetailView ContactDetailView;
+
 		private UcOpenContact ucOpenContact;
 		private OPenContactViewModel _vmOpenContact;
 
@@ -101,17 +104,21 @@ namespace KontaktBuchApp.ViewModel
 		public IRelayCommand AddCommand { get; set; }
 		public IRelayCommand SearchCommand { get; set; }
 
-		public ContactListViewModel(IFileDialogService fileDialogService,
+		public ContactListViewModel(IContactList iContactList,
+			                         IFileDialogService fileDialogService,
 											 IImagesService IimageService,
 			                         IMessageService Imessageservice,
-			                         OPenContactViewModel vmOpenContact)
+			                         OPenContactViewModel vmOpenContact,
+											 ContactDetailViewModel vmContactDetail)
 		{
+			this._IcontactList = iContactList;
 			this._fileDialogService = fileDialogService;
 			this._IimageService = IimageService;
 			this._Imessageservice = Imessageservice;
 			this._vmOpenContact = vmOpenContact;
+			this._vmContactDetail = vmContactDetail;
 
-
+			//this._IcontactList.GetAll()
 			this.OpenCommand = new RelayCommand(OpenContact);
 			this.AddCommand = new RelayCommand(AddContact);
 			this.SearchCommand = new RelayCommand(SearchContacts);
@@ -124,12 +131,17 @@ namespace KontaktBuchApp.ViewModel
 
 		private void AddContact()
 		{
-			throw new NotImplementedException();
+			this.ucOpenContact = new UcOpenContact();
+			this.ucOpenContact.DataContext = this._vmOpenContact;
+			this.ucOpenContact.Show();
 		}
 
 		private void OpenContact()
-		{
+		{	
 
+			this.ContactDetailView = new ContactDetailView();
+			this.ContactDetailView.DataContext = this._vmContactDetail;
+			this.ContactDetailView.Show();
 		}
 	}
 }
