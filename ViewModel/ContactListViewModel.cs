@@ -226,22 +226,7 @@ namespace KontaktBuchApp.ViewModel
 
 		private MContact FillContact()
 		{
-			//if(SelectedContact != null)
-			//{
-			//	this._mContact.ContactId = SelectedContact.ContactId;
-			//	this._mContact.Nachname = SelectedContact.Nachname;
-			//	this._mContact.Vorname = SelectedContact.Vorname;
-			//	this._mContact.Profilbild = SelectedContact.Profilbild;
-			//	this._mContact.Addresses = SelectedContact.Addresses;
-			//	this._mContact.ContactMethods= SelectedContact.ContactMethods;
-
-			//	return this.SelectedContact;
-			//}
-			//else
-			//{
-			//	return this._mContact = null;
-			//}
-
+			
 			if (SelectedContact == null)
 				return null;
 

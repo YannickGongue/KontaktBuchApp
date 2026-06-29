@@ -45,7 +45,7 @@ namespace KontaktBuchApp.ViewModel
 
 		public ObservableCollection<MAddress> Addresses
 		{
-			get => _addresses;
+			get { return _addresses; }
 			set
 			{
 				_addresses = value;
@@ -55,7 +55,7 @@ namespace KontaktBuchApp.ViewModel
 
 		public ObservableCollection<MContactMethod> ContactMethods
 		{
-			get => _contactMethods;
+			get { return _contactMethods; }
 			set
 			{
 				_contactMethods = value;

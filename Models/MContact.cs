@@ -17,7 +17,6 @@ namespace KontaktBuchApp.Models
 		public string ContactId { get; set; }
 		public Byte[]  Profilbild { get; set; } 
 		public ImageSource ProfilbildImage { get; set; } 
-		public int BildGroesse => Profilbild?.Length ?? 0;
 		public string  Nachname { get; set; }
 		public string Vorname { get; set; }
 		public ObservableCollection <MContactMethod> ContactMethods{ get; set; }

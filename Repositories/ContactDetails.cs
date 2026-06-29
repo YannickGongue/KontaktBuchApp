@@ -12,12 +12,10 @@ namespace KontaktBuchApp.Repositories
 {
 	public class ContactDetails : IContactDetails
 	{
-		//private DbContactContext _dbContext;
 
 		public List<MAddress> _ltAddresses;
 		public ContactDetails()
 		{
-			//this._dbContext = dbContext;
 			_ltAddresses = new List<MAddress>
 			{
 				new MAddress { AddressId = "1", ContactId = "1", Plz = "12345", Ort = "City1", Strasse = "Street1", strasseNr = "1", Land = "Country1" },

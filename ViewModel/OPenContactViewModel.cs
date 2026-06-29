@@ -22,7 +22,7 @@ namespace KontaktBuchApp.ViewModel
 		private ImageSource _selectedImage;
 		public ImageSource ContactImage
 		{
-			get => _selectedImage;
+			get { return _selectedImage; }
 			set
 			{
 				_selectedImage = value;

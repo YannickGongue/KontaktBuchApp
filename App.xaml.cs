@@ -29,7 +29,6 @@ namespace KontaktBuchApp
 
 		private void ConfigureServices(IServiceCollection services)
 		{
-			
 			services.AddSingleton<ContactListView>();
 			services.AddSingleton<ContactDetailView>();
 			services.AddSingleton<OpenContactView>();
@@ -40,10 +39,6 @@ namespace KontaktBuchApp
 			services.AddTransient<OPenContactViewModel>();
 			services.AddTransient<ContactDetailViewModel>();
 			services.AddTransient<AddressViewModel>();
-
-			//services.AddTransient<DbContactContext>();
-
-
 
 			services.AddTransient<MContact>();
 			services.AddTransient<MContactMethod>();
