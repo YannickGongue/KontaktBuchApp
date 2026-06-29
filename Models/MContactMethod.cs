@@ -12,8 +12,8 @@ namespace KontaktBuchApp.Models
 	public class MContactMethod
 	{
 		[Key]
-		public int ContactTypeId { get; set; }
-		public int ContactId { get; set; }
+		public string ContactTypeId { get; set; }
+		public string ContactId { get; set; }
 		public string Value { get; set; }
 
 		public MContact mContact { get; set; }

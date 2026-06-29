@@ -8,6 +8,7 @@ using KontaktBuchApp.Models;
 using KontakBuchApp.Models;
 using KontaktBuchApp.Repositories;
 using KontaktBuchApp.ViewModel;
+using KontaktBuchApp.DBManager;
 
 namespace KontaktBuchApp
 {
@@ -36,6 +37,8 @@ namespace KontaktBuchApp
 			services.AddTransient<ContactListViewModel>();
 			services.AddTransient<OPenContactViewModel>();
 			services.AddTransient<ContactDetailViewModel>();
+			//services.AddTransient<DbContactContext>();
+
 
 
 			services.AddTransient<MContact>();
@@ -46,6 +49,8 @@ namespace KontaktBuchApp
 			services.AddTransient<IContactList, ContactList>();
 			services.AddTransient<IFileDialogService, FileDialogService>();
 			services.AddTransient<IMessageService, MessageService>();
+			services.AddTransient<IContactDetails, ContactDetails>();
+
 
 		}
 

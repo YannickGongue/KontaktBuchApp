@@ -16,5 +16,6 @@ namespace KontaktBuchApp.Services
 		string FileExtension(string path);
 		ImageSource LoadImage(OpenFileDialog dialog);
 		BitmapImage ConvertToImage(byte[] imageData);
+
 	}
 }

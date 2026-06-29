@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KontakBuchApp.Models
+namespace KontaktBuchApp.Models
 {
 	public class MAddress
 	{		
 		[Key]
-		public int AddressId { get; set; }
-		public int ContactId { get; set; }
+		public string AddressId { get; set; }
+		public string ContactId { get; set; }
 		public string Plz { get; set; }
 		public string Ort { get; set; }
 		public string Strasse { get; set; }

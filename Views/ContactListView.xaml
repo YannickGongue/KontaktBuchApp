@@ -36,36 +36,67 @@
             Cursor="Hand" 
 			  Text="Search"/>
 
-		<DataGrid ItemsSource="{Binding Contacts}"
-          AutoGenerateColumns="False"
-			 Margin="10,74,10,80">
+		<DataGrid 
+			RowDetailsVisibilityMode="VisibleWhenSelected"
+    ItemsSource="{Binding Contacts}"
+    SelectedItem="{Binding SelectedContact, Mode=TwoWay}"
+    AutoGenerateColumns="False"
+    Margin="10,74,10,80">
 
 			<DataGrid.Columns>
+
 				<DataGridTextColumn Header="ContactId"
-                Binding="{Binding ContactId}" />
+                            Binding="{Binding ContactId}" />
+
+				<DataGridTemplateColumn Header="Bild">
+					<DataGridTemplateColumn.CellTemplate>
+						<DataTemplate>
+							<Image Source="{Binding ProfilbildImage}"
+                           Width="60"
+                           Height="60"
+                           Stretch="Uniform"/>
+						</DataTemplate>
+					</DataGridTemplateColumn.CellTemplate>
+				</DataGridTemplateColumn>
+
 				<DataGridTextColumn Header="Vorname"
-                            Binding="{Binding FirstName}" />
+                            Binding="{Binding Vorname}" />
 
 				<DataGridTextColumn Header="Nachname"
-                            Binding="{Binding LastName}" />
+                            Binding="{Binding Nachname}" />
+		
 
-				<DataGridTextColumn Header="Bild"
-                Binding="{Binding ImagePath}" />
-
-				<DataGridComboBoxColumn Header="Address"
-    SelectedItemBinding="{Binding Address}"
-    DisplayMemberPath="Name"
-    SelectedValuePath="CategoryId"
-    ItemsSource="{Binding Addresses}" />
-
-				<DataGridComboBoxColumn Header="Contacts"
-                SelectedItemBinding="{Binding ContactTypes}"
-                DisplayMemberPath="Name"
-                SelectedValuePath="CategoryId"
-                ItemsSource="{Binding Categories}" />
-				
-				
 			</DataGrid.Columns>
+			<DataGrid.RowDetailsTemplate>
+				<DataTemplate>
+
+					<StackPanel>
+
+						<TextBlock Text="Adressen:" FontWeight="Bold"/>
+
+						<ItemsControl ItemsSource="{Binding Addresses}">
+							<ItemsControl.ItemTemplate>
+								<DataTemplate>
+									<TextBlock Text="{Binding Strasse}" />
+								</DataTemplate>
+							</ItemsControl.ItemTemplate>
+						</ItemsControl>
+
+						<TextBlock Text="Contact Methods:" FontWeight="Bold"/>
+
+						<ItemsControl ItemsSource="{Binding ContactMethods}">
+							<ItemsControl.ItemTemplate>
+								<DataTemplate>
+									<TextBlock Text="{Binding Value}" />
+								</DataTemplate>
+							</ItemsControl.ItemTemplate>
+						</ItemsControl>
+
+					</StackPanel>
+
+				</DataTemplate>
+			</DataGrid.RowDetailsTemplate>
+
 		</DataGrid>
 
 		<Controls:IconButton 

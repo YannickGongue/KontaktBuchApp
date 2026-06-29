@@ -33,7 +33,41 @@ namespace KontaktBuchApp.ViewModel
 		private OpenContactView openContactView;
 		private OPenContactViewModel _vmOpenContact;
 
+		private ObservableCollection<MContact> _contacts;
+		private MContact _mContact;
+		private MContact _selectedContact;
+		private ImageSource _imageSource;
+		
 
+		public ImageSource ProfilbildImage
+		{
+			get => this._imageSource;
+			set
+			{
+				_imageSource = value;
+				OnPropertyChanged(nameof(ProfilbildImage));
+			}
+		}
+
+
+		public MContact SelectedContact
+		{
+			get => _selectedContact;
+			set
+			{
+				_selectedContact = value;
+				OnPropertyChanged(nameof(SelectedContact));
+			}
+		}
+		public ObservableCollection<MContact> Contacts
+		{
+			get => _contacts;
+			set
+			{
+				_contacts = value;
+				OnPropertyChanged(nameof(Contacts));
+			}
+		}
 		public string SearchText
 		{
 			get { return searchText; }
@@ -109,17 +143,26 @@ namespace KontaktBuchApp.ViewModel
 			                         IFileDialogService fileDialogService,
 											 IImagesService IimageService,
 			                         IMessageService Imessageservice,
-			                         OPenContactViewModel vmOpenContact,
-											 ContactDetailViewModel vmContactDetail)
+											 ContactDetailViewModel vmContactDetail,
+											 MContact mContact)
 		{
+			this._mContact = mContact;
 			this._IcontactList = iContactList;
 			this._fileDialogService = fileDialogService;
 			this._IimageService = IimageService;
 			this._Imessageservice = Imessageservice;
-			this._vmOpenContact = vmOpenContact;
 			this._vmContactDetail = vmContactDetail;
 
-			//this._IcontactList.GetAll()
+			Contacts = _IcontactList.GetAll();
+
+			foreach (var contact in this.Contacts)
+			{
+
+				contact.ProfilbildImage = _IimageService.ConvertToImage(contact.Profilbild);
+			}
+
+
+
 			this.OpenCommand = new RelayCommand(OpenContact);
 			this.AddCommand = new RelayCommand(AddContact);
 			this.SearchCommand = new RelayCommand(SearchContacts);
@@ -138,10 +181,23 @@ namespace KontaktBuchApp.ViewModel
 			
 		}
 
+		//public void Load(MContact contact)
+		//{
+		//	Vorname = contact.Vorname;
+		//	Nachname = contact.Nachname;
+		//	ContactId = contact.ContactId;
+		//}
+
 		private void OpenContact()
 		{
 
+			this._mContact.ContactId = SelectedContact.ContactId;
+			this._mContact.Nachname = SelectedContact.Nachname;
+			this._mContact.Vorname = SelectedContact.Vorname;
+			this._mContact.Profilbild = SelectedContact.Profilbild;
+			this._vmOpenContact = new OPenContactViewModel(this._mContact, this._IimageService);
 			this.openContactView = new OpenContactView();
+
 			this.openContactView.DataContext = this._vmOpenContact;
 			this.openContactView.Show();
 		}
