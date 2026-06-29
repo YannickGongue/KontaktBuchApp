@@ -16,7 +16,7 @@ namespace KontaktBuchApp.ViewModel
 		private string plz;
 		private string ort;
 		private string land;
-
+		private ContactDetailViewModel _vmContactDetail;
 		private IContactDetails _IContactDetail;
 
 		public string Strasse
