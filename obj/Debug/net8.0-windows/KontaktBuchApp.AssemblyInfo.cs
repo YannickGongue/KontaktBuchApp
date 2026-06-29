@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KontaktBuchApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08f1cc0f94dc005c7bb95f1fbe65fcfd7ef8d9d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c60a73645ba1b7f68aea8aa7242785f596621651")]
 [assembly: System.Reflection.AssemblyProductAttribute("KontaktBuchApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KontaktBuchApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
