@@ -40,7 +40,7 @@ C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-win
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\ref\KontaktBuchApp.dll
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\OpenContactView.g.cs
 C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\OpenContactView.baml
-C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ucAdresse.g.cs
-C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ucContactMethod.g.cs
-C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ucAdresse.baml
-C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ucContactMethod.baml
+C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\AdresseView.g.cs
+C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\AdresseView.baml
+C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ContactMethodView.g.cs
+C:\Users\vamic\source\repos\KontatBuchApp1.2\KontaktBuchApp\obj\Debug\net8.0-windows\Views\ContactMethodView.baml

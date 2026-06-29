@@ -28,7 +28,7 @@ namespace KontaktBuchApp.Repositories
 				Vorname = "Yannick Clement",
 				Nachname = "Gongue Gongue",
 				Profilbild = File.ReadAllBytes(@"C:\Temp\Testbild.jpg"),
-				Addresses = new List<MAddress>
+				Addresses = new ObservableCollection<MAddress>
 				{
 					new MAddress
 					{
@@ -40,7 +40,7 @@ namespace KontaktBuchApp.Repositories
 						strasseNr="46"
 					}
 				},
-				ContactMethods = new List<MContactMethod>
+				ContactMethods = new ObservableCollection<MContactMethod>
 				{
 					new MContactMethod
 					{

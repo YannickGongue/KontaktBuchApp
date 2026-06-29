@@ -65,7 +65,5 @@ namespace KontaktBuchApp.ViewModel
 			this.ContactImage = this._imageService.ConvertToImage(this._mContact.Profilbild);
 		}
 
-		
-
 	}
 }

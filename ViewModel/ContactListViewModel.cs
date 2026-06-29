@@ -1,26 +1,35 @@
-﻿using KontakBuchApp.Models;
+﻿using CommunityToolkit.Mvvm.Input;
+using KontakBuchApp.Models;
+using KontaktBuchApp.Models;
+using KontaktBuchApp.Repositories;
 using KontaktBuchApp.Services;
 using KontaktBuchApp.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
-using CommunityToolkit.Mvvm.Input;
-using KontaktBuchApp.Models;
 
 namespace KontaktBuchApp.ViewModel
 {
 	public class ContactListViewModel : ViewModelBase
 	{
+		int iFlag;
 		private string searchText;
 		private string contactId;
 		private string vorname;
 		private string nachname;
+
+		private MAddress _mAddress;
+		private MContactMethod _mContactMethod;
+
 		private IContactList _IcontactList;
+		private IContactDetails _IcontactDetail;
+
 		private ImageSource imagePath;
 		private ObservableCollection<MAddress> addresses;
 		private ObservableCollection<MContactMethod> contactMethods	;
@@ -139,33 +148,44 @@ namespace KontaktBuchApp.ViewModel
 		public IRelayCommand AddCommand { get; set; }
 		public IRelayCommand SearchCommand { get; set; }
 
+		public IRelayCommand EditCommand { get; set; }
+
+
 		public ContactListViewModel(IContactList iContactList,
+			                         IContactDetails icontactDetail,
 			                         IFileDialogService fileDialogService,
 											 IImagesService IimageService,
 			                         IMessageService Imessageservice,
-											 ContactDetailViewModel vmContactDetail,
-											 MContact mContact)
+											 MContact mContact,
+											 MAddress mAddress,
+											 MContactMethod mContactMethod)
 		{
 			this._mContact = mContact;
+			this._mAddress = mAddress;
+			this._mContactMethod = mContactMethod;
 			this._IcontactList = iContactList;
+			this._IcontactDetail = icontactDetail;
 			this._fileDialogService = fileDialogService;
 			this._IimageService = IimageService;
 			this._Imessageservice = Imessageservice;
-			this._vmContactDetail = vmContactDetail;
 
 			Contacts = _IcontactList.GetAll();
 
 			foreach (var contact in this.Contacts)
 			{
-
 				contact.ProfilbildImage = _IimageService.ConvertToImage(contact.Profilbild);
 			}
-
-
 
 			this.OpenCommand = new RelayCommand(OpenContact);
 			this.AddCommand = new RelayCommand(AddContact);
 			this.SearchCommand = new RelayCommand(SearchContacts);
+			this.EditCommand = new RelayCommand(EditContact);
+		}
+
+		private void EditContact()
+		{
+			iFlag = 0;
+			this.ShowContactView();
 		}
 
 		private void SearchContacts()
@@ -175,31 +195,65 @@ namespace KontaktBuchApp.ViewModel
 
 		private void AddContact()
 		{
-			this.ContactDetailView = new ContactDetailView();
-			this.ContactDetailView.DataContext = this._vmContactDetail;
-			this.ContactDetailView.Show();
-			
+			iFlag = 1;
+		  this.ShowContactView();
 		}
-
-		//public void Load(MContact contact)
-		//{
-		//	Vorname = contact.Vorname;
-		//	Nachname = contact.Nachname;
-		//	ContactId = contact.ContactId;
-		//}
 
 		private void OpenContact()
 		{
 
-			this._mContact.ContactId = SelectedContact.ContactId;
-			this._mContact.Nachname = SelectedContact.Nachname;
-			this._mContact.Vorname = SelectedContact.Vorname;
-			this._mContact.Profilbild = SelectedContact.Profilbild;
-			this._vmOpenContact = new OPenContactViewModel(this._mContact, this._IimageService);
+			this._vmOpenContact = new OPenContactViewModel(FillContact(), this._IimageService);
 			this.openContactView = new OpenContactView();
 
 			this.openContactView.DataContext = this._vmOpenContact;
 			this.openContactView.Show();
+		}
+
+		public void ShowContactView()
+		{
+			this.ContactDetailView = new ContactDetailView();
+			this._vmContactDetail = new ContactDetailViewModel(this._fileDialogService,
+																				this._IimageService,
+																				this._Imessageservice,
+																				this._IcontactDetail,
+																				this._IcontactList,
+																				FillContact(),
+																				this._mAddress,
+																				this._mContactMethod);
+			this.ContactDetailView.DataContext = this._vmContactDetail;
+			this.ContactDetailView.Show();
+		}
+
+		private MContact FillContact()
+		{
+			//if(SelectedContact != null)
+			//{
+			//	this._mContact.ContactId = SelectedContact.ContactId;
+			//	this._mContact.Nachname = SelectedContact.Nachname;
+			//	this._mContact.Vorname = SelectedContact.Vorname;
+			//	this._mContact.Profilbild = SelectedContact.Profilbild;
+			//	this._mContact.Addresses = SelectedContact.Addresses;
+			//	this._mContact.ContactMethods= SelectedContact.ContactMethods;
+
+			//	return this.SelectedContact;
+			//}
+			//else
+			//{
+			//	return this._mContact = null;
+			//}
+
+			if (SelectedContact == null)
+				return null;
+
+			return new MContact
+			{
+				ContactId = SelectedContact.ContactId,
+				Vorname = SelectedContact.Vorname,
+				Nachname = SelectedContact.Nachname,
+				Profilbild = SelectedContact.Profilbild,
+				Addresses = SelectedContact.Addresses,
+				ContactMethods = SelectedContact.ContactMethods
+			};
 		}
 	}
 }

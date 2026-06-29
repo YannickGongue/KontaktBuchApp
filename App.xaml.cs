@@ -33,10 +33,14 @@ namespace KontaktBuchApp
 			services.AddSingleton<ContactListView>();
 			services.AddSingleton<ContactDetailView>();
 			services.AddSingleton<OpenContactView>();
+			services.AddSingleton<AddressView>();
+			services.AddSingleton<ContactMethodView>();
 
 			services.AddTransient<ContactListViewModel>();
 			services.AddTransient<OPenContactViewModel>();
 			services.AddTransient<ContactDetailViewModel>();
+			services.AddTransient<AddressViewModel>();
+
 			//services.AddTransient<DbContactContext>();
 
 

@@ -1,6 +1,7 @@
 ﻿using KontakBuchApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,7 @@ namespace KontaktBuchApp.Models
 		public int BildGroesse => Profilbild?.Length ?? 0;
 		public string  Nachname { get; set; }
 		public string Vorname { get; set; }
-		public ICollection <MContactMethod> ContactMethods{ get; set; }
-		public ICollection <MAddress> Addresses { get; set; }
+		public ObservableCollection <MContactMethod> ContactMethods{ get; set; }
+		public ObservableCollection <MAddress> Addresses { get; set; }
 	}
 }

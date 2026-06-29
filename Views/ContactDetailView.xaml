@@ -118,14 +118,16 @@
 						    PathData="{StaticResource add-new}"
 						    Height="40"
 						    Width="300"
-						IconColor="RoyalBlue"/>
+						IconColor="RoyalBlue"
+						Command="{Binding AddContactMethodCommand}"/>
 
 					<DataGrid
                  RowHeight="45"
     HeadersVisibility="Column"
     GridLinesVisibility="Horizontal"
     AutoGenerateColumns="False"
-    CanUserAddRows="False">
+    CanUserAddRows="False"
+						ItemsSource="{Binding ContactMethods}">
 
 						<DataGrid.Columns>
 
@@ -170,7 +172,8 @@
 									Height="50"
 									Foreground="black"
                         IconColor="RoyalBlue"
-                       PathData="{StaticResource add-new}"/>
+                       PathData="{StaticResource add-new}"
+												Command="{Binding AddAddressCommand}"/>
 
 					<DataGrid ItemsSource="{Binding Addresses}"
                               AutoGenerateColumns="False"
@@ -179,20 +182,16 @@
 						<DataGrid.Columns>
 
 							<DataGridTextColumn Header="Straße"
-                                                Binding="{Binding Street}"
-                                                Width="*"/>
+                    Binding="{Binding Strasse}" />
 
 							<DataGridTextColumn Header="Ort"
-                                                Binding="{Binding City}"
-                                                Width="200"/>
+                    Binding="{Binding Ort}" />
 
 							<DataGridTextColumn Header="PLZ"
-                                                Binding="{Binding PostalCode}"
-                                                Width="120"/>
+                    Binding="{Binding Plz}" />
 
-							<DataGridTextColumn Header="PLZ"
-                           Binding="{Binding country}"
-                           Width="120"/>
+							<DataGridTextColumn Header="Land"
+                    Binding="{Binding Land}" />
 
 							<DataGridTemplateColumn Width="80">
 								<DataGridTemplateColumn.CellTemplate>

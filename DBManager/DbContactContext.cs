@@ -3,6 +3,7 @@ using KontaktBuchApp.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,7 +41,7 @@ namespace KontaktBuchApp.DBManager
 				Vorname = "Yannick Clement",
 				Nachname = "Gongue Gongue",
 				Profilbild = null,
-				Addresses = new List<MAddress>
+				Addresses = new ObservableCollection<MAddress>
 				{
 					new MAddress
 					{
@@ -52,7 +53,7 @@ namespace KontaktBuchApp.DBManager
 						strasseNr="46"
 					}
 				},
-				ContactMethods = new List<MContactMethod>
+				ContactMethods = new ObservableCollection<MContactMethod>
 				{
 					new MContactMethod
 					{

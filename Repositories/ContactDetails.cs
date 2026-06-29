@@ -3,6 +3,7 @@ using KontaktBuchApp.DBManager;
 using KontaktBuchApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace KontaktBuchApp.Repositories
 	{
 		//private DbContactContext _dbContext;
 
-		public List<MAddress> _ltAddresses { get; set; }
+		public List<MAddress> _ltAddresses;
 		public ContactDetails()
 		{
 			//this._dbContext = dbContext;
@@ -24,6 +25,10 @@ namespace KontaktBuchApp.Repositories
 				new MAddress { AddressId = "3", ContactId = "2", Plz = "54321", Ort = "City3", Strasse = "Street3", strasseNr = "3", Land = "Country3" }
 			};
 
+		}
+		public ObservableCollection<MAddress> GetAll()
+		{
+			return new ObservableCollection<MAddress>(_ltAddresses);
 		}
 		public List<MAddress> GetAddressesByContactId(string contactId)
 		{

@@ -4,9 +4,11 @@ using KontakBuchApp.Models;
 using KontaktBuchApp.Models;
 using KontaktBuchApp.Repositories;
 using KontaktBuchApp.Services;
+using KontaktBuchApp.Views;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +38,30 @@ namespace KontaktBuchApp.ViewModel
 		private string country;
 		private MContactMethodType type;
 		private string value;
+		private ObservableCollection<MAddress> _addresses;
+		private ObservableCollection<MContactMethod> _contactMethods;
+		private AddressView _AddressView;
+		private AddressViewModel AddressViewModel;
+
+		public ObservableCollection<MAddress> Addresses
+		{
+			get => _addresses;
+			set
+			{
+				_addresses = value;
+				OnPropertyChanged(nameof(Addresses));
+			}
+		}
+
+		public ObservableCollection<MContactMethod> ContactMethods
+		{
+			get => _contactMethods;
+			set
+			{
+				_contactMethods = value;
+				OnPropertyChanged(nameof(ContactMethods));
+			}
+		}
 		public string FirstName
 		{
 			get { return _firstname; }
@@ -166,29 +192,44 @@ namespace KontaktBuchApp.ViewModel
 			this.DeleteContactMethodCommand = new RelayCommand(DeleteContactMethod);
 			this.ChangeImageCommand = new RelayCommand(ChangeImage);
 
-			this.AddText();
-
-
+			if(this.AddText().Contains("Kontakt bearbeiten"))
+			{
+				this.FirstName = this._mContacts.Nachname;
+				this.LastName = this._mContacts.Vorname;
+				this._SelectedImage = this._imageService.ConvertToImage(this._mContacts.Profilbild);
+				this.Addresses = this._mContacts.Addresses;
+				this.ContactMethods = this._mContacts.ContactMethods;
+			}
+			else
+			{
+				this.FirstName = "";
+				this.LastName = "";
+				this._SelectedImage = null;
+				this.Addresses =null ;
+				this.ContactMethods = null;
+			}
 		}
 
-		private void AddText()
+
+		private string AddText()
 		{
-			if (string.IsNullOrEmpty(this._mContacts.ContactId))
-				this.ContactText = "Neuer Kontakt Hinzufügen";
+			if (this._mContacts == null)
+				return this.ContactText = "Neuer Kontakt Hinzufügen";
 			else
-				this.ContactText = "Kontakt bearbeiten";
+				return this.ContactText = "Kontakt bearbeiten";
 		}
 
 		private void SaveContact()
 		{
-
-			if (string.IsNullOrEmpty(this._mContacts.Nachname))
-			{
+		
 				_mContacts.Nachname = this.LastName;
 				_mContacts.Vorname = this.FirstName;
+			   _mContacts.ProfilbildImage = this.SelectedImage;
+			   _mContacts.Addresses = this.Addresses;
+			  _mContacts.ContactMethods = this.ContactMethods;
 				this._IContactList.Add(this._mContacts);     
 				
-			}
+			
 		}
 
 		private void DeleteContact()
@@ -201,12 +242,13 @@ namespace KontaktBuchApp.ViewModel
 
 		private void AddAddress()
 		{
-			_mAddress.Strasse = this.Street;
-			_mAddress.Ort = this.City;
-			_mAddress.Plz = this.PostalCode;
-			_mAddress.Land = this.Country;
+	
+			this._AddressView = new AddressView();
+			this.AddressViewModel = new AddressViewModel(this._mAddress);
+			this._AddressView.DataContext = this.AddressViewModel;
+			this._AddressView.Show();
+			
 
-			this._IcontactDetails.UpdateAddressesByContactId(this._mContacts.ContactId);
 		}
 
 		private void DeleteAddress()
@@ -238,6 +280,8 @@ namespace KontaktBuchApp.ViewModel
 			{
 				this._messageService.ShowMessage(ex.Message);
 			}
-		}		
+		}
+		
+
 	}
 }
