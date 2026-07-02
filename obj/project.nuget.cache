@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HzXbmcoLm2k=",
+  "dgSpecHash": "bl5Z99t1SXU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vamic\\source\\repos\\KontatBuchApp1.2\\KontaktBuchApp\\KontaktBuchApp.csproj",
+  "projectFilePath": "C:\\Users\\vamic\\source\\repos\\KOntakBuchApp_Update\\KontaktBuchApp_Update\\KontaktBuchApp\\KontaktBuchApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vamic\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.2\\communitytoolkit.mvvm.8.4.2.nupkg.sha512",
     "C:\\Users\\vamic\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.28\\microsoft.entityframeworkcore.8.0.28.nupkg.sha512",
