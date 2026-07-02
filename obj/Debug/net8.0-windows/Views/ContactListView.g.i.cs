@@ -93,7 +93,7 @@ namespace KontaktBuchApp.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/KontaktBuchApp;component/views/contactlistview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/KontaktBuchApp;V1.0.0.0;component/views/contactlistview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ContactListView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

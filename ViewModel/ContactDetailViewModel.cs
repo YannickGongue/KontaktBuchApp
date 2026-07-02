@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using KontakBuchApp.Models;
 using KontaktBuchApp.Models;
 using KontaktBuchApp.Repositories;
 using KontaktBuchApp.Services;
@@ -36,7 +35,7 @@ namespace KontaktBuchApp.ViewModel
 		private string city;
 		private string postalCode;
 		private string country;
-		private MContactMethodType type;
+		private MContactMethod contacttype;
 		private string value;
 		private ObservableCollection<MAddress> _addresses;
 		private ObservableCollection<MContactMethod> _contactMethods;
@@ -138,12 +137,12 @@ namespace KontaktBuchApp.ViewModel
 			}
 		}
 
-		public MContactMethodType Type
+		public MContactMethod ContactType
 		{
-			get { return type; }
+			get { return contacttype; }
 			set
 			{
-				type = value;
+				contacttype = value;
 				OnPropertyChanged(nameof(Type));
 			}
 		}
@@ -236,7 +235,7 @@ namespace KontaktBuchApp.ViewModel
 		{
 			if (!string.IsNullOrEmpty(this._mContacts.ContactId))
 			{
-				this._IContactList.Delete(this._mContacts.ContactId);
+				//this._IContactList.Delete(this._mContacts.ContactId);
 			}
 		}
 
@@ -258,7 +257,7 @@ namespace KontaktBuchApp.ViewModel
 
 		private void AddContactMethod()
 		{
-			_mContactMethod.Type = this.Type;
+			_mContactMethod.Type = this.ContactType.Type;
 			_mContactMethod.Value = this.Value;
 
 			this._IcontactDetails.GetContactMethodsByContactId(this._mContacts.ContactId);

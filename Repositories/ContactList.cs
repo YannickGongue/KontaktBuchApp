@@ -1,5 +1,4 @@
-﻿using KontakBuchApp.Models;
-using KontaktBuchApp.DBManager;
+﻿using KontaktBuchApp.DBManager;
 using KontaktBuchApp.Models;
 using KontaktBuchApp.Services;
 using System;
@@ -58,6 +57,45 @@ namespace KontaktBuchApp.Repositories
 					}
 				}
 			});
+
+			ltContact.Add(new MContact
+			{
+				ContactId = "02",
+				Vorname = "vanessa Michelle",
+				Nachname = "Gongue Mbamen",
+				Profilbild = File.ReadAllBytes(@"C:\Temp\Testbild.jpg"),
+				Addresses = new ObservableCollection<MAddress>
+				{
+					new MAddress
+					{
+						AddressId = "02",
+						Strasse = "Landwehrstr",
+						Ort = "Salzgitter",
+						Plz = "38245",
+						Land = "Deutschland",
+						strasseNr="46"
+					}
+				},
+				ContactMethods = new ObservableCollection<MContactMethod>
+				{
+					new MContactMethod
+					{
+						ContactTypeId = "02",
+						Value = "vamichba16@yahoo.fr",
+						Type = MContactMethodType.Email
+
+					},
+
+					new MContactMethod
+					{
+						ContactTypeId = "02",
+						Value = "01761234567",
+						Type = MContactMethodType.Phone
+					}
+				}
+			});
+		
+		
 		}
 		
 		public ObservableCollection<MContact> GetAll()
@@ -65,9 +103,12 @@ namespace KontaktBuchApp.Repositories
 			return new ObservableCollection<MContact>(ltContact);
 		}
 
-		public MContact? Get(string id)
+		public ObservableCollection<MContact> Get(string id)
 		{
-			return this.ltContact.FirstOrDefault(c => c.ContactId == id);
+			var contacts = this.ltContact
+		  .Where(c => c.ContactId == id);
+
+			return new ObservableCollection<MContact>(contacts);
 		}
 
 		public void Add(MContact contact)
@@ -77,20 +118,29 @@ namespace KontaktBuchApp.Repositories
 
 		public void Update(MContact contact)
 		{
-			var existing = Get(contact.ContactId);
-			if (existing == null) return;
+			var existing = Get(contact.ContactId).FirstOrDefault();
+
+			if (existing == null)
+				return;
+
 			existing.Nachname = contact.Nachname;
 			existing.Vorname = contact.Vorname;
 			existing.Profilbild = contact.Profilbild;
-			existing.Addresses = contact.Addresses;
-			existing.ContactMethods = contact.ContactMethods;
+			//existing.Addresses = contact.Addresses;
+			//existing.contactMethods = contact.contactMethods;
 		}
 
 		public void Delete(string id)
 		{
-			var item = Get(id);
+			var item = Get(id).FirstOrDefault();
+
 			if (item != null)
-				this.ltContact.Remove(item);
+			{
+				ltContact.Remove(item);
+			}
 		}
+
+
+		
 	}
 }

@@ -5,7 +5,6 @@ using System.Data;
 using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using KontaktBuchApp.Models;
-using KontakBuchApp.Models;
 using KontaktBuchApp.Repositories;
 using KontaktBuchApp.ViewModel;
 using KontaktBuchApp.DBManager;

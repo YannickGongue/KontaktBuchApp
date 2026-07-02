@@ -12,9 +12,9 @@ namespace KontaktBuchApp.Services
 	public interface IContactList
 	{
 		ObservableCollection<MContact> GetAll();
-		MContact? Get(string id);
+		ObservableCollection<MContact> Get(string id);
 		void Add(MContact contact);
 		void Update(MContact contact);
-		void Delete(string id);
+		//void Delete(string id);
 	}
 }

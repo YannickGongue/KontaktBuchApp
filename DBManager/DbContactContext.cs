@@ -1,5 +1,4 @@
-﻿using KontakBuchApp.Models;
-using KontaktBuchApp.Models;
+﻿using KontaktBuchApp.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -1,5 +1,4 @@
 ﻿using CommunityToolkit.Mvvm.Input;
-using KontakBuchApp.Models;
 using KontaktBuchApp.Models;
 using KontaktBuchApp.Repositories;
 using KontaktBuchApp.Services;
@@ -18,7 +17,6 @@ namespace KontaktBuchApp.ViewModel
 {
 	public class ContactListViewModel : ViewModelBase
 	{
-		int iFlag;
 		private string searchText;
 		private string contactId;
 		private string vorname;
@@ -184,18 +182,16 @@ namespace KontaktBuchApp.ViewModel
 
 		private void EditContact()
 		{
-			iFlag = 0;
 			this.ShowContactView();
 		}
 
 		private void SearchContacts()
 		{
-			throw new NotImplementedException();
+			this.Contacts = this._IcontactList.Get(this.SearchText);
 		}
 
 		private void AddContact()
 		{
-			iFlag = 1;
 		  this.ShowContactView();
 		}
 
